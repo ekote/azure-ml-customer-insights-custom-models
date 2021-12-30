@@ -25,6 +25,7 @@ def init():
     global ws
     global df_to_predict
     global df
+    global datastore
 
     parser = argparse.ArgumentParser("score")
 
@@ -42,6 +43,10 @@ def init():
     run_ctx = Run.get_context()
     ws = run_ctx.experiment.workspace
     model_name = 'AutoMLbb88e09f11'
+    
+    run_ctx.log("OutputDatastore", args.output_datastore)
+    run_ctx.log("OutputPath", args.output_path)
+    run_ctx.log("Model", model_name)
 
     logger.info("geting datasets ...")
     # dataset = Dataset.get_by_name(ws, name='customer_tabular')
@@ -52,6 +57,8 @@ def init():
 
     log_server.update_custom_dimensions({'model_name': model_name, 'model_version': 1})
     model_path = Model.get_model_path(model_name, _workspace=ws, version=1)
+
+    datastore = Datastore.get(ws, output_datastore)
 
     try:
         logger.info("Loading model from path.")
@@ -72,13 +79,9 @@ def run():
     logger.info("Extracting Directory {} from path {}".format(directory_name, output_path))
 
     output_folder = tempfile.TemporaryDirectory(dir="/tmp")
-
     filename = os.path.join(output_folder.name, os.path.basename(output_path))
 
-    datastore = Datastore.get(ws, output_datastore)
-
-    logger.info(output_folder)
-    logger.info(filename)
+    run_ctx.log("Filename", filename)
 
     df_final_res.to_csv(filename)
 
