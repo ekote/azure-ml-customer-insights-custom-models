@@ -6,7 +6,8 @@ import tempfile
 import joblib
 import pandas as pd
 from azureml.automl.core.shared import logging_utilities, log_server
-from azureml.core import Dataset, Datastore, Run
+from azureml.core import Dataset, Datastore
+from azureml.core.run import Run
 from azureml.core.model import Model
 from azureml.telemetry import INSTRUMENTATION_KEY
 
