@@ -1,0 +1,20 @@
+name: CustomerIncomeInferencePipeline.yml
+dependencies:
+- python=3.8
+- pip:
+  - azureml-train-automl-runtime
+  - inference-schema
+  - azureml-interpret
+  - azureml-defaults
+  - azureml-sdk
+- numpy
+- pandas
+- scikit-learn
+- py-xgboost
+- fbprophet
+- holidays
+- psutil
+- joblib
+channels:
+- anaconda
+- conda-forge
