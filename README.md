@@ -9,7 +9,7 @@ Objective: add custom model to Customer Insights
 1. Create Azure Machine Learning (Azure ML) service
 2. Add Customer Insights in a Contrubutor Role
 4. Go to the Azure ML Workspace
-5. Create Compute Instance (in that case size doesn't matter ^^ :cactus:)
+5. Create Compute Instance (in that case size doesn't matter :cactus:)
 6. Clone the repo via terminal
 7. Register the model.pkl (type: AutoML)
 8. Create Azure ML Dataset (Tabular) from the file
