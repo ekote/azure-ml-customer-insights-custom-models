@@ -14,7 +14,22 @@ Objective: add custom model created and served by Azure Machine Learning to Cust
 6. Register the model.pkl (type: AutoML) and name it `MaxAbsScalerExtremeRandomTrees`
 7. Create Azure ML Dataset (Tabular) from the file Customer_1.csv and name it `CustomerDataDataset`
 8. Check if your blob name is `workspaceblobstore`. If not - change that value in the notebook.
-9. Run the notebook cells one by one
+9. Run the notebook cells one by one.
+
+
+# Model training
+To be documented
+
+# FAQ
+- What is `output_datastore`?
+  - It's the name of the datastore (Storage Account) e.g. `workspaceblobstore`
+- What is `output_path`?
+  - It's a path to a result file (see file score.py, line 68)
+- Shouldn't score.py contain the init() and run() methods? 
+  - No. The file just have to return the dataframe with the results (without an index column - see score.py, line 54) 
+- How to debug the scirpt?
+  - Run `!python scripts/score.py --mode DEBUG --output_datastore workspaceblobstore --output_path CustomerIncomeOutput/CustomerIncomeOutput.csv`
+- How to train own model?
 
 
 ## Resources
