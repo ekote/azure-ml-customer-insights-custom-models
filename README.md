@@ -7,7 +7,7 @@ Context: Customer Insights ...
 
 Objective: add custom model created and served by Azure Machine Learning to Customer Insights.
 
-# General steps
+# General steps (Customer Dataset)
 1. Create Azure Machine Learning (Azure ML) service
 2. Add Dynamics365(multiple services) to Azure ML in a Contributor Role
 3. Go to the Azure ML Workspace
