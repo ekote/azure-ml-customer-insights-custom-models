@@ -25,7 +25,7 @@ Objective: add custom model created and served by Azure Machine Learning to Cust
 13. Run (refresh) a newly created model
 14. Ta dam :tada:! You should see the predictions :blush:
 
-
+VIDEO - https://youtu.be/SMXjyap-fZM 
 
 # Model training
 To be documented
