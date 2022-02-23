@@ -1,6 +1,9 @@
 # Azure ML and Customer Insights - Custom Models
 Azure ML :hearts: Customer Insights
 
+![repots](https://github.com/ekote/azure-architect/blob/master/images/Flame_Remote_Working_transparent_by_Icons8.gif?raw=true)
+
+
 Bring in your custom machine learning models to Dynamics 365 Customer Insights to make predictions on your unified customer data.
 
 Context: Customer Insights ...
