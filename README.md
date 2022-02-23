@@ -6,8 +6,6 @@ Azure ML :hearts: Customer Insights
 
 Bring in your custom machine learning models to Dynamics 365 Customer Insights to make predictions on your unified customer data.
 
-Context: Customer Insights ...
-
 Objective: add custom model created and served by Azure Machine Learning to Customer Insights.
 
 # General steps (Customer Dataset)
@@ -28,8 +26,11 @@ Objective: add custom model created and served by Azure Machine Learning to Cust
 14. Ta dam :tada:! You should see the predictions :blush:
 
 
+
 # Model training
 To be documented
+## AutoML
+## Notebooks
 
 # FAQ
 - What is `output_datastore`?
