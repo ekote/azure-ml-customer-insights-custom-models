@@ -47,3 +47,4 @@ To be documented
 
 ## Resources
 - https://docs.microsoft.com/en-us/dynamics365/customer-insights/audience-insights/custom-models
+- https://docs.microsoft.com/en-us/azure/machine-learning/how-to-deploy-pipelines
